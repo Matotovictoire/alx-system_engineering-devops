@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -p1a > temp_list; awk '{printf "%s, ", $0} END {print ""}' temp_list; rm temp_list
